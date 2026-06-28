@@ -11,7 +11,6 @@ const getAllowedOrigins = () => {
     : [
         'http://localhost:5173',
         'https://njobs.vercel.app',
-        'https://njobs-git-main-none12312.vercel.app',
       ];
 };
 
