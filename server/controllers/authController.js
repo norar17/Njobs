@@ -14,7 +14,8 @@ const hashValue = (value) => crypto.createHash('sha256').update(value).digest('h
 
 const generateToken36 = () => crypto.randomBytes(32).toString('hex');
 
-const getClientUrl = () => (process.env.CLIENT_URL || 'http://localhost:5173').split(',')[0].trim();
+const getClientUrl = () => 
+  process.env.CLIENT_URL.split(',')[0].trim();
 
 const dispatchVerificationEmail = async (user) => {
   const token = generateToken36();
